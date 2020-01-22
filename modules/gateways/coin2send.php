@@ -20,12 +20,6 @@ function coin2send_config()
             'FriendlyName' => 'SCI Password',
             'Description' => 'The SCI password',
             'Type' => 'text',
-        ),
-        'ReceiveCurrency' => array(
-            'FriendlyName' => 'Payout Currency',
-            'Description' => 'Select the currency used in WHMCS.',
-            'Type' => 'dropdown',
-            'Options' => 'BTC,LTC,USD',
         )
     );
 }
@@ -41,15 +35,6 @@ function coin2send_link($params)
     } else {
       $returnlink = $params['systemurl'];
     }
-
-    $coin2send_params = array(
-        'price_amount'      => number_format($params['amount'], 8, '.', ''),
-        'price_currency'    => $params['currency'],
-        'receive_currency'  => $params['ReceiveCurrency'],
-    );
-
-
-    
 
 
 	$form = '<form action="https://www.coin2send.com/sci" method="POST">';
