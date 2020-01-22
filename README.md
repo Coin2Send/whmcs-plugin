@@ -12,7 +12,7 @@ Invoices should be processed with **United State Dollar (USD)** currency and Coi
 
 ## via FTP
 
-1. Download https://github.com/Coin2Send/whmcs-plugin/archive/master.zip
+1. Download https://github.com/Coin2Send/whmcs-plugin/archive/1.0.zip
 2. Extract ZIP archive and upload files to web root.
 3. In admin panel, go to **Setup » Payments » Payment Gateways** and select **All Payment Gateways**. Click **Coin2Send**.
 4. Inside Coin2Send block fill the SCI Credentials and other fields. 
